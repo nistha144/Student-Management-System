@@ -18,6 +18,22 @@ def create_tables():
             role TEXT NOT NULL
         )
     """)
+    connection.execute("""
+        CREATE TABLE IF NOT EXISTS students (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            student_id TEXT UNIQUE NOT NULL,
+            name TEXT NOT NULL,
+            email TEXT,
+            phone TEXT
+        )
+    """)
+    connection.execute("""
+        CREATE TABLE IF NOT EXISTS subjects (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            subject_id TEXT UNIQUE NOT NULL,
+            subject_name TEXT NOT NULL
+        )
+    """)
 
     connection.commit()
     connection.close()
