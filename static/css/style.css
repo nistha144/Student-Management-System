@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)),
+        url("../images/maya-building.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main login page */
+.login-page {
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    padding: 25px;
+}
+
+/* University logo */
+.university-logo {
+    width: 130px;
+    height: 130px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+/* Main heading */
+.system-heading h1 {
+    color: #111827;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-bottom: 25px;
+}
+
+/* Login box */
+.login-container {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.96);
+    padding: 40px;
+    border: 1px solid #222;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    text-align: left;
+}
+
+/* Login heading */
+.login-container h2 {
+    text-align: center;
+    color: #111827;
+    font-size: 26px;
+    margin-bottom: 30px;
+}
+
+/* Labels */
+.login-container label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* Username and password */
+.login-container input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 22px;
+    border: 1px solid #555;
+    border-radius: 7px;
+    font-size: 17px;
+    background: #fff;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #111827;
+}
+
+/* Login button */
+.login-container button {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #111;
+    border-radius: 7px;
+    background: #111827;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #000;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .login-page {
+        padding: 15px;
+    }
+
+    .system-heading h1 {
+        font-size: 24px;
+    }
+
+    .login-container {
+        padding: 28px 22px;
+    }
+
+    .university-logo {
+        width: 75px;
+        height: 75px;
+    }
+}
+/* ==============================
+   STUDENT DASHBOARD
+   ============================== */
+
+.dashboard-page {
+    .dashboard-page 
+    width: 100%;
+    min-height: 100vh;
+    padding: 35px 50px;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    overflow-y: auto;
+    height: 100vh;
+
+}
+
+.dashboard-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+.dashboard-page > h1 {
+    color: #111827;
+    font-size: 28px;
+    margin-bottom: 25px;
+    letter-spacing: 0.5px;
+}
+
+.welcome-section {
+    background: rgba(255, 255, 255, 0.95);
+    max-width: 750px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    border: 1px solid #222;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.welcome-section h2 {
+    color: #111827;
+    font-size: 25px;
+    margin-bottom: 8px;
+}
+
+.welcome-section p {
+    color: #4b5563;
+    font-size: 16px;
+}
+
+.dashboard-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.dashboard-card {
+    background: rgba(255, 255, 255, 0.96);
+    padding: 25px;
+    border: 1px solid #222;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
+}
+
+.dashboard-card h3 {
+    color: #111827;
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.dashboard-card p {
+    color: #4b5563;
+    font-size: 15px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+}
+
+.dashboard-card button {
+    padding: 11px 20px;
+    border: 1px solid #111;
+    border-radius: 7px;
+    background: #111827;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.dashboard-card button:hover {
+    background: #000;
+}
+
+.logout-button {
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 35px;
+    border: 1px solid #111;
+    border-radius: 7px;
+    background: #111827;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background: #000;
+}
+
+
+/* Mobile screen */
+
+@media (max-width: 700px) {
+
+    .dashboard-page {
+        padding: 25px 15px;
+    }
+
+    .dashboard-page > h1 {
+        font-size: 22px;
+    }
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-logo {
+        width: 80px;
+        height: 80px;
+    }
+}

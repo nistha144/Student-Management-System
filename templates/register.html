@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Academic Management System - Register</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <img src="{{ url_for('static', filename='images/maya-logo.jpg') }}"
+             alt="Maya Devi University Logo"
+             class="university-logo">
+
+        <div class="system-heading">
+            <h1>STUDENT ACADEMIC MANAGEMENT SYSTEM</h1>
+        </div>
+
+        <form method="POST" action="/register" class="login-container">
+
+            <h2>Create Account</h2>
+
+            <label>Username:</label>
+            <input type="text" name="username" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <label>Select Role:</label>
+            <select name="role" required>
+                <option value="">-- Select Role --</option>
+                <option value="student">Student</option>
+                <option value="teacher">Teacher</option>
+            </select>
+
+            <button type="submit">Create Account</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

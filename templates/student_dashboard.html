@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Dashboard - Student Academic Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="dashboard-page">
+
+        <!-- University Logo -->
+        <img src="{{ url_for('static', filename='images/maya-logo.jpg') }}"
+             alt="Maya Devi University Logo"
+             class="dashboard-logo">
+
+        <!-- System Heading -->
+        <h1>STUDENT ACADEMIC MANAGEMENT SYSTEM</h1>
+
+        <!-- Welcome Message -->
+        <div class="welcome-section">
+            <h2>Welcome, Student</h2>
+            <p>View your academic information from one place.</p>
+        </div>
+
+        <!-- Dashboard Cards -->
+        <div class="dashboard-container">
+
+            <div class="dashboard-card">
+                <h3>My Profile</h3>
+                <p>View your personal and academic details.</p>
+                <button>View Profile</button>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>My Attendance</h3>
+                <p>View your attendance and percentage.</p>
+                <button>View Attendance</button>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>My Marks</h3>
+                <p>View your subject-wise marks and result.</p>
+                <button>View Marks</button>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Attendance History</h3>
+                <p>View your previous attendance records.</p>
+                <button>View History</button>
+            </div>
+
+        </div>
+
+        <!-- Logout -->
+        <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+
+    </div>
+
+</body>
+</html>

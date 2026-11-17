@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Academic Management System - Login</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="login-page">
+
+        <img src="{{ url_for('static', filename='images/maya-logo.jpg') }}"
+             alt="Maya Devi University Logo"
+             class="university-logo">
+
+        <div class="system-heading">
+            <h1>STUDENT ACADEMIC MANAGEMENT SYSTEM</h1>
+        </div>
+
+        <form method="POST" action="/login" class="login-container">
+
+            <h2>Login</h2>
+
+            <label>Username:</label>
+            <input type="text" name="username" required>
+
+            <label>Password:</label>
+            <input type="password" name="password" required>
+
+            <button type="submit">Login</button>
+
+        </form>
+
+    </div>
+
+</body>
+</html>

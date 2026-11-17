@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Dashboard - Student Academic Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+    <div class="dashboard-page">
+
+        <!-- University Logo -->
+        <img src="{{ url_for('static', filename='images/maya-logo.jpg') }}"
+             alt="Maya Devi University Logo"
+             class="dashboard-logo">
+
+        <!-- System Heading -->
+        <h1>STUDENT ACADEMIC MANAGEMENT SYSTEM</h1>
+
+        <!-- Welcome Message -->
+        <div class="welcome-section">
+            <h2>Welcome, Teacher</h2>
+            <p>Manage student academic records from one place.</p>
+        </div>
+
+        <!-- Teacher Dashboard Cards -->
+        <div class="dashboard-container">
+
+            <div class="dashboard-card">
+                <h3>Students</h3>
+                <p>Add, view and manage student information.</p>
+                <button>Manage Students</button>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Subjects</h3>
+                <p>Add and manage subjects for students.</p>
+                <button>Manage Subjects</button>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Attendance</h3>
+                <p>Mark and view student attendance records.</p>
+                <button>Manage Attendance</button>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Marks</h3>
+                <p>Manage marks and academic results.</p>
+                <button>Manage Marks</button>
+            </div>
+
+            <div class="dashboard-card">
+                <h3>Reports</h3>
+                <p>View academic and attendance reports.</p>
+                <button>View Reports</button>
+            </div>
+
+        </div>
+
+        <!-- Logout -->
+        <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+
+    </div>
+
+</body>
+</html>
